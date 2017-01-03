@@ -24,7 +24,6 @@ void setup()
 
 // loop: RUNS CONSTANTLY
 void loop()
-
 {
   // Update the Duty Cycle percentage
   for (int i = 0; i <= 100; i++)
@@ -32,6 +31,6 @@ void loop()
     duty_cycle = String(i);
     lcd.setCursor(12, 2);
     lcd.print(duty_cycle + "%" + "  ");
-    delay(1000);
+    delay(500);
   }
 }
