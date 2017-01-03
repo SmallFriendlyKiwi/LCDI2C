@@ -10,28 +10,28 @@ String duty_cycle;
 void setup()
 {
   // Initialize the lcd for 20 chars 4 lines, turn on backlight
-  lcd.begin(20,4);         
+  lcd.begin(20, 4);
   // Turn on the backlight
-  lcd.backlight(); 
+  lcd.backlight();
 
   // Write characters on the display
-  // NOTE: Cursor Position: Lines and Characters start at 0  
-  lcd.setCursor(0,0);
+  // NOTE: Cursor Position: Lines and Characters start at 0
+  lcd.setCursor(0, 0);
   lcd.print("Firmware:   1.16");
-  lcd.setCursor(0,2);
+  lcd.setCursor(0, 2);
   lcd.print("Duty Cycle:");
 }
 
 // loop: RUNS CONSTANTLY
-void loop()   
+void loop()
 
 {
   // Update the Duty Cycle percentage
-  for (int i=0; i <= 100; i++)
-    {
-      duty_cycle = String(i);
-      lcd.setCursor(12,2);
-      lcd.print(duty_cycle + "%" + "  ");
-      delay(1000);
-    }
+  for (int i = 0; i <= 100; i++)
+  {
+    duty_cycle = String(i);
+    lcd.setCursor(12, 2);
+    lcd.print(duty_cycle + "%" + "  ");
+    delay(1000);
+  }
 }
