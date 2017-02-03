@@ -17,7 +17,7 @@ void setup()
   // Write characters on the display
   // NOTE: Cursor Position: Lines and Characters start at 0
   lcd.setCursor(0, 0);
-  lcd.print("Firmware:   1.16");
+  lcd.print("Firmware:   2.16");
   lcd.setCursor(0, 2);
   lcd.print("Duty Cycle:");
 }
